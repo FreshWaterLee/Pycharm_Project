@@ -1,0 +1,26 @@
+<annotation>
+	<folder>iloveyou</folder>
+	<filename>iloveyou.f2556f71-055c-11ec-9ec7-a0481c847136.jpg</filename>
+	<path>C:\Users\Na\PycharmProjects\pythonProject1\Tensorflow\SignLanguageDetection\images\iloveyou\iloveyou.f2556f71-055c-11ec-9ec7-a0481c847136.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>iloveyou</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>215</xmin>
+			<ymin>187</ymin>
+			<xmax>426</xmax>
+			<ymax>345</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>yes</folder>
+	<filename>yes.5c89ac7d-0540-11ec-8250-a0481c847136.jpg</filename>
+	<path>C:\Users\Na\PycharmProjects\pythonProject1\Tensorflow\SignLanguageDetection\images\yes\yes.5c89ac7d-0540-11ec-8250-a0481c847136.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>yes</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>76</ymin>
+			<xmax>148</xmax>
+			<ymax>224</ymax>
+		</bndbox>
+	</object>
+</annotation>

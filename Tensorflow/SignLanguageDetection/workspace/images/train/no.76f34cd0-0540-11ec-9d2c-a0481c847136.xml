@@ -1,0 +1,26 @@
+<annotation>
+	<folder>no</folder>
+	<filename>no.76f34cd0-0540-11ec-9d2c-a0481c847136.jpg</filename>
+	<path>C:\Users\Na\PycharmProjects\pythonProject1\Tensorflow\SignLanguageDetection\images\no\no.76f34cd0-0540-11ec-9d2c-a0481c847136.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>no</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>95</xmin>
+			<ymin>221</ymin>
+			<xmax>240</xmax>
+			<ymax>366</ymax>
+		</bndbox>
+	</object>
+</annotation>
