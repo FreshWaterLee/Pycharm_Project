@@ -23,7 +23,7 @@ configs = config_util.get_configs_from_pipeline_file(CONFIG_PATH)
 detection_model = model_builder.build(model_config=configs['model'],is_training=False)
 
 ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-11'))
+ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-21'))
 
 @tf.function
 def detect_fn(image):

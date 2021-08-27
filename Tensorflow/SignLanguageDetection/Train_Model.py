@@ -60,7 +60,7 @@ config_text = text_format.MessageToString(pipeline_config)
 ## 위에 설정한 Custom PipeLine 저장
 with tf.io.gfile.GFile(CONFIG_PATH, "wb") as f:
     f.write(config_text)
-
+print("""python {}/research/object_detection/model_main_tf2.py --model_dir={}/{} --pipeline_config_path={}/{}/pipeline.config --num_train_steps=20000""".format(APIMODEL_PATH, MODEL_PATH,CUSTOM_MODEL_NAME,MODEL_PATH,CUSTOM_MODEL_NAME))
 #
 # python Tensorflow/models/research/object_detection/model_main_tf2.py --model_dir=Tensorflow/workspace/models/my_ssd_mobnet --pipeline_config_path=Tensorflow/workspace/models/my_ssd_mobnet/pipeline.config --num_train_steps=5000
 # 트레이닝 실행 코드(첫번째는 model_Main(tf2) 코드, 모델 저장위치, 참고할 pipeLine 위치, Step은 트레이닝 횟수,
