@@ -23,7 +23,7 @@ configs = config_util.get_configs_from_pipeline_file(CONFIG_PATH)
 detection_model = model_builder.build(model_config=configs['model'],is_training=False)
 
 ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
-ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-21'))
+ckpt.restore(os.path.join(CHECKPOINT_PATH, 'ckpt-16'))
 
 @tf.function
 def detect_fn(image):
@@ -63,7 +63,7 @@ while True:
         category_index,
         use_normalized_coordinates=True,
         max_boxes_to_draw=1,
-        min_score_thresh=.3,
+        min_score_thresh=.5,
         agnostic_mode=False
     )
     cv2.imshow('object detection', cv2.resize(image_np_with_detections, (800, 600)))
