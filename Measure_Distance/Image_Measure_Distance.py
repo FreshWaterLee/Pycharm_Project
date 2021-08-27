@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 import Utilss as ut
 
-webcam =False
+#webcam = False
+webcam = True
 path = '1.jpg'
 cap = cv2.VideoCapture(0)
 cap.set(10, 160)
@@ -21,12 +22,12 @@ while True:
         success, img = cap.read()
     else:
         img = cv2.imread(path)
-
     img, conts = ut.getContours(img, minArea=50000, filter=4)
     if len(conts) != 0:
         biggest = conts[0][2]
         imgWarp = ut.WarpImg(img, biggest, wP, hP)
         imgContours2, conts2 = ut.getContours(imgWarp, minArea=2000, filter=4, cThr=[50, 50], draw=False)
+        cv2.imshow('Warp1',imgContours2)
         if len(conts) != 0:
             for obj in conts2:
                 cv2.polylines(imgContours2, [obj[2]], True, (0, 255, 0), 2)
