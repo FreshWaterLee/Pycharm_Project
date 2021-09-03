@@ -19,13 +19,16 @@ while cap.isOpened():
         boxes = [res[0] for res in result]
         texts = [res[1][0] for res in result]
         scores = [res[1][1] for res in result]
-        img = draw_ocr(img, boxes, texts, scores, font_path=font_Path)
-    else:
-        print("없습니다!!")
-        img = frame_ori.copy()
+        for score in scores:
+            if score > 0.65:
+                img = draw_ocr(img, boxes, texts, scores, font_path=font_Path)
+            else:
+                pass
     cv2.imshow('Image', img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        print("지금은 휴식 시간!")
         break
+
 
 cap.release()
 cv2.destroyAllWindows()
