@@ -66,7 +66,7 @@ while cap.isOpened():
 
     cv2.putText(img, f'FPS : {int(fps)}', (40, 70), cv2.FONT_HERSHEY_COMPLEX, 3, (255, 0, 255), 3)
 
-    cv2.imshow("Img",img)
+    cv2.imshow("Img", img)
     if cv2.waitKey(1) == ord('q'):
         break
 
