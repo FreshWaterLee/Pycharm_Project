@@ -1,3 +1,3 @@
-*.csv filter=lfs diff=lfs merge=lfs -text
-*.exe filter=lfs diff=lfs merge=lfs -text
-faster_rcnn_inception_v2_coco_2018_01_28.tar.gz filter=lfs diff=lfs merge=lfs -text
+version https://git-lfs.github.com/spec/v1
+oid sha256:39718332a8002a14c83765e4916b3ecb4a6b298ce3d04ac8e3ebc568307ffec5
+size 211
